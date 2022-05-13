@@ -27,6 +27,7 @@ public class DataApplication {
 	@Bean
 	CommandLineRunner run(UserService userService){
 		return args -> {
+			System.out.println("Git learnings");
 			userService.saveRole(new Role(null,"ROLE_USER"));
 			userService.saveRole(new Role(null,"ROLE_MANAGER"));
 			userService.saveRole(new Role(null,"ROLE_PRIMARY_ADMIN"));
